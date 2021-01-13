@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Pokemon_Console
 {
-    private class ProgramUI
+     class ProgramUI
     {
         private PokemonRepository _Repo = new PokemonRepository();
         public void Run()
@@ -30,7 +30,6 @@ namespace Pokemon_Console
                 switch (response)
                 {
                     case 1:
-                        return;
                         SeeMyPokemonTeam();
                         Console.Clear();
                         break;
@@ -43,7 +42,8 @@ namespace Pokemon_Console
                     case 4:
                         break;
                     case 5:
-                        continueToRun = false;
+                        continueToRunMenu = false;
+                        break;
 
                     default:
                         Console.WriteLine("Please enter a valid response.");

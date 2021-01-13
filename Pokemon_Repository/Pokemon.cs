@@ -26,7 +26,7 @@ namespace Pokemon_Repository
         None
     }
 
-    class Pokemon
+    public class Pokemon
     {
         public string PokemonSpeciesName { get; set; }
         public string PokemonNickName { get; set; }
@@ -49,7 +49,7 @@ namespace Pokemon_Repository
             MoveOne = moveOne;
             MoveTwo = moveTwo;
             MoveThree = moveThree;
-            moveFour = moveFour;
+            MoveFour = moveFour;
 
         }
     }
